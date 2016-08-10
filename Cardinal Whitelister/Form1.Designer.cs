@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.IPTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.PortTextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // IPTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(65, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(317, 31);
-            this.textBox1.TabIndex = 0;
+            this.IPTextBox.Location = new System.Drawing.Point(65, 22);
+            this.IPTextBox.Name = "IPTextBox";
+            this.IPTextBox.Size = new System.Drawing.Size(317, 31);
+            this.IPTextBox.TabIndex = 0;
             // 
             // label1
             // 
@@ -51,12 +51,12 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "IP:";
             // 
-            // textBox2
+            // PortTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(451, 22);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(84, 31);
-            this.textBox2.TabIndex = 3;
+            this.PortTextBox.Location = new System.Drawing.Point(451, 22);
+            this.PortTextBox.Name = "PortTextBox";
+            this.PortTextBox.Size = new System.Drawing.Size(84, 31);
+            this.PortTextBox.TabIndex = 3;
             // 
             // label2
             // 
@@ -73,8 +73,9 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(517, 264);
             this.button1.TabIndex = 5;
-            this.button1.Text = "Unleash your PS TV";
+            this.button1.Text = "Liberate your PS TV";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form1
             // 
@@ -83,9 +84,9 @@
             this.ClientSize = new System.Drawing.Size(558, 438);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.PortTextBox);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.IPTextBox);
             this.Name = "Form1";
             this.Text = "Cardinal Whitelister";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -96,9 +97,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox IPTextBox;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox PortTextBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
     }
